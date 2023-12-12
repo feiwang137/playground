@@ -9,7 +9,7 @@ https://go.dev/play/
 
 ```bash
 # build the image
-docker build -t golang/playground .
+docker build  --build-arg HTTP_PROXY=http://192.168.xxx:7890 HTTPS_PROXY=http://192.168.xxxx:7890 -t golang/playground .
 ```
 
 ## Running
